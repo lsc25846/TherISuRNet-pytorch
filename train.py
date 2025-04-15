@@ -67,10 +67,10 @@ def main(args):
 
     
     train_dataset = ThermalImageDataset(os.path.join(args.data_dir, "train_lr"), os.path.join(args.data_dir, "train_hr"))
-val_dataset = ThermalImageDataset(os.path.join(args.data_dir, "val_lr"), os.path.join(args.data_dir, "val_hr"))
+    val_dataset = ThermalImageDataset(os.path.join(args.data_dir, "val_lr"), os.path.join(args.data_dir, "val_hr"))
 
     train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
+    val_loader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False)
 
     l1 = nn.L1Loss()
     cx = ContextualLoss()
