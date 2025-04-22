@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Windows metadata
+*.Zone.Identifier
+
+# Model checkpoints (optional)
+checkpoints/
+
+# Large training/validation datasets
+train_*/  
+val_*/
+
+# IDE / Editor settings (optional)
+.vscode/
+*.swp
+
+# 忽略 sample/ 和 results/ 裡面的所有東西
+sample/*
+results/*
+
+# 但保留 .gitkeep 檔案（! 表示例外）
+!sample/.gitkeep
+!results/.gitkeep
