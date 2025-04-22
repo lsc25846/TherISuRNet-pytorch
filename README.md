@@ -1,11 +1,14 @@
-# TherISuRNet: Thermal Image Super-Resolution Network
+# TherISuRNet: Thermal Image Super-Resolution Network (PyTorch Implementation)
 
-TherISuRNet 是一個用於 **熱影像超解析 (Thermal Image Super-Resolution)** 的深度學習模型，使用 PyTorch 實現。
-本模型可將低解析度的熱影像重建為高解析度版本，適用於行車輔助、監控與低光場景下的物體辨識前處理。
+本專案為 **TherISuRNet 論文的 PyTorch 實作版本**，提供熱影像超解析任務的完整訓練、推論與模型導出流程。
+
+📝 原始論文與 GitHub 專案：
+- 📄 論文連結：[CVPRW 2020 - TherISuRNet](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w6/Chudasama_TherISuRNet_-_A_Computationally_Efficient_Thermal_Image_Super-Resolution_Network_CVPRW_2020_paper.pdf)
+- 💻 原始 GitHub：[Vishal2188/TherISuRNet](https://github.com/Vishal2188/TherISuRNet---A-Computationally-Efficient-Thermal-Image-Super-Resolution-Network)
 
 ---
 
-## 🧠 專案特色
+##  專案特色
 
 - 基於自定義卷積模型設計（見 `model.py`）
 - 支援 **Contextual Loss (CX Loss)** 以提升感知品質
@@ -15,7 +18,7 @@ TherISuRNet 是一個用於 **熱影像超解析 (Thermal Image Super-Resolution
 
 ---
 
-## 📦 安裝方式
+##  安裝方式
 
 ```bash
 git clone https://github.com/your_repo/Therisurnet_pytorch.git
@@ -27,7 +30,7 @@ pip install -r requirement.txt
 
 ---
 
-## 📁 專案結構
+##  專案結構
 
 ```
 Therisurnet_pytorch/
@@ -96,7 +99,7 @@ python test_metrics.py
 
 ---
 
-## 🧪 損失函數：Contextual Loss
+##  損失函數：Contextual Loss
 
 本模型支援 [Contextual Loss](https://arxiv.org/abs/1803.02077) 增加影像感知品質。可於 `train.py` 中控制開關：
 
@@ -127,7 +130,7 @@ onnxruntime
 
 ## 📬 聯絡與貢獻
 
-歡迎提交 PR 或 Issue 討論與改進，如有合作研究需求也歡迎聯絡作者。
+歡迎提交 PR 或 Issue 討論與改進。
 
 ---
 
@@ -137,5 +140,4 @@ onnxruntime
 |---------|--------------------|
 | (sample image) | (super-resolved image) |
 
-> *(請自行補上圖片展示)*
 
